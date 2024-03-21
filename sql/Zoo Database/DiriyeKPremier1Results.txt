@@ -1,0 +1,176 @@
+Question 1
+
+"PART_NUM"                    "DESCRIPTION"                 
+"AT94"                        "Iron           "             
+"BV06"                        "Home Gym       "             
+"CD52"                        "Microwave Oven "             
+"DL71"                        "Cordless Drill "             
+"DR93"                        "Gas Range      "             
+"DW11"                        "Washer         "             
+"FD21"                        "Stand Mixer    "             
+"KL62"                        "Dryer          "             
+"KT03"                        "Dishwasher     "             
+"KV29"                        "Treadmill      "             
+
+Question 2
+
+"REP_NUM"                     "LAST_NAME"                   "FIRST_NAME"                  "STREET"                      "CITY"                        "STATE"                       "ZIP"                         "COMMISSION"                  "RATE"                        
+"20"                          "Kaiser         "             "Valerie        "             "624 Randall    "             "Grove          "             "FL"                          "33321"                       "20542.5"                     "0.05"                        
+"35"                          "Hull           "             "Richard        "             "532 Jackson    "             "Sheldon        "             "FL"                          "33553"                       "39216"                       "0.07"                        
+"65"                          "Perez          "             "Juan           "             "1626 Taylor    "             "Fillmore       "             "FL"                          "33336"                       "23487"                       "0.05"                        
+
+Question 3
+
+"CUSTOMER_NAME"               "CREDIT_LIMIT"                
+"Al's Appliance and Sport           ""7500"                        
+"Brookings Direct                   ""10000"                       
+"Ferguson's                         ""7500"                        
+"The Everything Shop                ""5000"                        
+"Bargains Galore                    ""10000"                       
+"Johnson's Department Store         ""10000"                       
+"Lee's Sport and Appliance          ""5000"                        
+"Deerfield's Four Seasons           ""7500"                        
+"All Season                         ""7500"                        
+
+Question 4
+
+"ORDER_NUM"                   "ORDER_DATE"                  "CUSTOMER_NUM"                
+"21619"                       "23-OCT-03"                   "148"                         
+
+Question 5
+
+"CUSTOMER_NUM"                "CUSTOMER_NAME"               
+"148"                         "Al's Appliance and Sport           "
+"356"                         "Ferguson's                         "
+"462"                         "Bargains Galore                    "
+"524"                         "Kline's                            "
+"608"                         "Johnson's Department Store         "
+"842"                         "All Season                         "
+                   
+
+Question 6
+
+"PART_NUM"                    "DESCRIPTION"                 
+"BV06"                        "Home Gym       "             
+"CD52"                        "Microwave Oven "             
+"DR93"                        "Gas Range      "             
+"DW11"                        "Washer         "             
+"KL62"                        "Dryer          "             
+"KT03"                        "Dishwasher     "             
+"KV29"                        "Treadmill      "             
+
+Question 7
+
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND"                     
+"DL71"                        "Cordless Drill "             "21"                          
+"DW11"                        "Washer         "             "12"                          
+"FD21"                        "Stand Mixer    "             "22"                          
+"KL62"                        "Dryer          "             "12"                          
+
+Question 8 
+
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND_VALUE"               
+"CD52"                        "Microwave Oven "             "5280"                        
+"DR93"                        "Gas Range      "             "3960"                        
+"DW11"                        "Washer         "             "4799.88"                     
+"KL62"                        "Dryer          "             "4199.4"                      
+"KT03"                        "Dishwasher     "             "4760"                        
+
+Question 9 
+
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND_VALUE"               
+"BV06"                        "Home Gym       "             "35772.75"                    
+"KV29"                        "Treadmill      "             "12510"                       
+                   
+
+Question 10
+
+"PART_NUM"                    "DESCRIPTION"                 
+"AT94"                        "Iron           "             
+"BV06"                        "Home Gym       "             
+"DL71"                        "Cordless Drill "             
+"FD21"                        "Stand Mixer    "             
+"KV29"                        "Treadmill      "             
+
+Question 11
+
+"CUSTOMER_NUM"                "CUSTOMER_NAME"               
+"725"                         "Deerfield's Four Seasons           "
+
+Question 12
+
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND"                     "CLASS"                       "WAREHOUSE"                   "PRICE"                       "MINIMUM"                     "REORDER"                     
+"DL71"                        "Cordless Drill "             "21"                          "HW"                          "3"                           "129.95"                      "20"                          "N"                           
+"KT03"                        "Dishwasher     "             "8"                           "AP"                          "3"                           "595"                         "3"                           "N"                           
+"KL62"                        "Dryer          "             "12"                          "AP"                          "1"                           "349.95"                      "7"                           "N"                           
+"DR93"                        "Gas Range      "             "8"                           "AP"                          "2"                           "495"                         "4"                           "N"                           
+"BV06"                        "Home Gym       "             "45"                          "SG"                          "2"                           "794.95"                      "30"                          "N"                           
+"AT94"                        "Iron           "             "50"                          "HW"                          "3"                           "24.95"                       "20"                          "N"                           
+"CD52"                        "Microwave Oven "             "32"                          "AP"                          "1"                           "165"                         "11"                          "N"                           
+"FD21"                        "Stand Mixer    "             "22"                          "HW"                          "3"                           "159.95"                      "22"                          "Y"                           
+"KV29"                        "Treadmill      "             "9"                           "SG"                          "2"                           "1390"                        "5"                           "Y"                           
+"DW11"                        "Washer         "             "12"                          "AP"                          "3"                           "399.99"                      "8"                           "N"                           
+
+Question 13
+
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND"                     "CLASS"                       "WAREHOUSE"                   "PRICE"                       "MINIMUM"                     "REORDER"                     
+"CD52"                        "Microwave Oven "             "32"                          "AP"                          "1"                           "165"                         "11"                          "N"                           
+"DR93"                        "Gas Range      "             "8"                           "AP"                          "2"                           "495"                         "4"                           "N"                           
+"DW11"                        "Washer         "             "12"                          "AP"                          "3"                           "399.99"                      "8"                           "N"                           
+"KL62"                        "Dryer          "             "12"                          "AP"                          "1"                           "349.95"                      "7"                           "N"                           
+"KT03"                        "Dishwasher     "             "8"                           "AP"                          "3"                           "595"                         "3"                           "N"                           
+"AT94"                        "Iron           "             "50"                          "HW"                          "3"                           "24.95"                       "20"                          "N"                           
+"DL71"                        "Cordless Drill "             "21"                          "HW"                          "3"                           "129.95"                      "20"                          "N"                           
+"FD21"                        "Stand Mixer    "             "22"                          "HW"                          "3"                           "159.95"                      "22"                          "Y"                           
+"BV06"                        "Home Gym       "             "45"                          "SG"                          "2"                           "794.95"                      "30"                          "N"                           
+"KV29"                        "Treadmill      "             "9"                           "SG"                          "2"                           "1390"                        "5"                           "Y"                           
+
+Question 14
+
+"CUSTOMER_NUM"                "CUSTOMER_NAME"               "BALANCE"                     "CREDIT_LIMIT"                
+"408"                         "The Everything Shop                ""5285.25"                     "5000"                        
+"842"                         "All Season                         ""8221"                        "7500"                        
+
+Question 15
+
+"CUSTOMER_NUM"                "CUSTOMER_NAME"               "CREDIT_LIMIT"                "TOTAL_BALANCE"               
+"356"                         "Ferguson's                         ""7500"                        "5785"                        
+"462"                         "Bargains Galore                    ""10000"                       "3412"                        
+"608"                         "Johnson's Department Store         ""10000"                       "2106"                        
+
+
+Question 16
+
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND_VALUE"               
+"AT94"                        "Iron           "             "1247.5"                      
+"BV06"                        "Home Gym       "             "35772.75"                    
+"CD52"                        "Microwave Oven "             "5280"                        
+"FD21"                        "Stand Mixer    "             "3518.9"                      
+
+Question 17
+
+"LOWEST_PRICE"                
+"24.95"                       
+
+Question 18
+
+"PART_NUM"                    "DESCRIPTION"                 "PRICE"                       
+"KV29"                        "Treadmill      "             "1390"                        
+
+Question 19**
+
+"REP_NUM"                     "BALANCE_TOTAL"               
+"20"                          "27533"                       
+"35"                          "8815.75"                     
+"65"                          "11303"                       
+
+Question 20
+
+"REP_NUM"                     "BALANCE_TOTAL"               
+"20"                          "27533"                       
+"65"                          "11303"                       
+
+Question 21
+
+                        
+                    

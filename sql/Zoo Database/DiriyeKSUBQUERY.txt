@@ -1,0 +1,11 @@
+List all the team names that have an association with Orthopedic Foundation for Animals. (Use subquery)
+
+SELECT TEAM_NAME
+FROM TEAM
+JOIN ASSOCIATION ON TEAM.ASSOC_ID = ASSOCIATION.ASSOC_ID
+WHERE ASSOC_NAME = (SELECT ASSOC_NAME FROM ASSOCIATION WHERE ASSOC_NAME = 'Orthopedic Foundation for Animals');
+
+1
+
+"TEAM_NAME"                   
+"Brown"  

@@ -1,0 +1,407 @@
+Question 1
+
+"TEAM_NAME"                   
+"Gold"                        
+"Red"                         
+"Silver"                      
+"Fuschia"                     
+"Yellow"                      
+"Purple"                      
+"Green"                       
+"Pink"                        
+"Orange"                      
+
+Question 2
+
+"ANIM_NAME"                   "ANIM_GENDER"                 
+"Grace"                       "F          "                 
+
+Question 3
+
+"PRODUCT_ID"                  "PRODUCT_NAME"                
+"124"                         "Sounds of the Jungle CD"     
+"272"                         "Panda T-shirt"               
+"274"                         "Zoo T-shirt"                 
+"354"                         "Bird Watcher''s Field Kit"   
+"442"                         "Sounds of the Ocean CD"      
+"576"                         "Panda Babies 2010 Calendar"  
+
+Question 4
+
+"MAINT_TITLE"                 
+"Janitor"                     
+"Electrician"                 
+"HVAC"                        
+
+Question 5
+
+"OFFICE_BUILDING"             
+"Administration"              
+"Inner Zoo Research Facility" 
+"Main Office"                 
+"Research Center"             
+"Aquatic Research"            
+
+Question 6 
+
+"PRODUCT_ID"                  "PRODUCT_NAME"                
+"225"                         "Zoo Water bottle"            
+"272"                         "Panda T-shirt"               
+"273"                         "Lion T-shirt"                
+"274"                         "Zoo T-shirt"                 
+
+Question 7
+
+"AVERAGE_EMP_SALARY"          
+"37757.25"                    
+
+Question 8 
+
+"MAX(SELLING_PRICE)"          
+"29.99"                       
+
+Question 9
+
+"EMP_FIRST_NAME"              "EMP_LAST_NAME"               
+"John"                        "Crosby"                      
+"Joe"                         "Kelleher"                    
+"Brittany"                    "Regan"                       
+"Kyle"                        "Taube"                       
+"Sarah"                       "Tollefson"                   
+"Bill"                        "Frank"                       
+"Julie"                       "McVeigh"                     
+"Samantha"                    "Regan"                       
+"Jason"                       "Mann"                        
+"Janet"                       "Heatley"                     
+"Greggory"                    "Paul"                        
+"Kyle"                        "Frank"                       
+"Patrick"                     "Havlat"                      
+"Casey"                       "Leeter"                      
+"Jacob"                       "Anderson"                    
+"Mike"                        "Lidberg"                     
+"Amanda"                      "Grohl"                       
+"Alysa"                       "Hornvquist"                  
+"Mikko"                       "Harding"                     
+"Josh"                        "Moore"                       
+"Char"                        "Schroeder"                   
+"Daniel"                      "Faraday"                     
+"Andrew"                      "Brunette"                    
+"Gabrielle"                   "Poole"                       
+"Kasey"                       "Anderson"                    
+"Shelby"                      "White"                       
+"Michelle"                    "Lewis"                       
+"Katherine"                   "Key"                         
+"Cole"                        "Young"                       
+"Kirk"                        "Scott"                       
+"Ben"                         "Carter"                      
+"Becca"                       "Turner"                      
+"Kate"                        "Phillips"                    
+"Taylor"                      "Flores"                      
+"Ericka"                      "Hughes"                      
+"Fred"                        "Gary"                        
+"Mark"                        "Blue"                        
+"Sharon"                      "Milton"                      
+"Maria"                       "Lamb"                        
+
+Question 10
+
+"PAY_AMOUNT"                  
+"22500"                       
+
+Question 11 
+
+"SMALLEST_INVENTORY"          "LARGEST_INVENTORY"           "AVERAGE_INVENTORY"           
+"9"                           "250"                         "23"                          
+
+Question 12
+
+"VET_HOSPITAL"                "NUMBER_OF_VETS_THAT_WORK"    
+"Broadview Veterinary Clinic" "3"                           
+"Edina Pet Hospital"          "1"                           
+"Bush Lake Pet Hospital"      "2"                           
+"Crossroads Veterinary Clinic""3"                           
+"River Bend Vet Clinic"       "2"                           
+"Northern Humane Animal Clinic""1"                           
+"Woodbury Animal Hospital"    "1"                           
+"Keller Animal Hospital"      "1"                           
+"Grove Animal Hospital"       "1"                           
+"Carver Lake Veterinary Center""1"                           
+"Wolff Animal Hospital"       "2"                           
+"Gentle Touch Animal Hospital""1"                           
+"Pet Crossing"                "2"                           
+"Blue Cross Small Animal Hospital""1"                           
+"Normandale Vet Hospital"     "2"                           
+"Murray Animal Hospital"      "4"                           
+"High Pointe Veterinary Clinic""2"                           
+"All Animals Clinic"          "3"                           
+"Animalife Veterinary Center" "2"                           
+
+Question 13
+
+"STORE_ID"                    "TRANSCATION_TOTALS"          
+"1402"                        "21.69"                       
+"1400"                        "14.98"                       
+"1408"                        "223.83"                      
+"1406"                        "106.96"                      
+"1404"                        "28.49"                       
+"1410"                        "23.98"                       
+"1401"                        "141.62"                      
+"1409"                        "151.28"                      
+              
+Question 14 
+
+"PRIV_EVEN_TYPE"              "TOTAL_EVENT_PRICE"           
+"Adult party"                 "575"                         
+"Wedding"                     "2755"                        
+"Graduation party"            "600"                         
+"Field trip"                  "2505"                        
+"Wedding reception"           "2300"                        
+"Dinner party"                "650"                         
+"Birthday"                    "2250"                                      
+
+Question 15
+
+"ANIM_NAME"                   "COUNT(ANIM_NAME)"            
+"Katherine"                   "1"                           
+"Kyle"                        "1"                           
+"Kayla"                       "1"                           
+"Katie"                       "1"                           
+"Kevin"                       "1"                           
+"Kaylee"                      "1"                           
+"Kimberly"                    "1"                           
+"Kaitlyn"                     "1"                           
+"Katelyn"                     "1"                           
+"Kylie"                       "1"                           
+
+Question 16
+
+"PAY_CREDIT_CARD_TYPE"        "SUM(PAY_AMOUNT)"             
+"MasterCard"                  "52980"                       
+"Visa"                        "85412"                       
+"Discover"                    "39368"                       
+"American Express"            "31429"                       
+
+Question 17
+
+"OFFICE_BUILDING"             "OFFICES"                     
+"Administration"              "5"                           
+"Inner Zoo Research Facility" "3"                           
+"Main Office"                 "4"                           
+"Research Center"             "4"                           
+"Aquatic Research"            "3"                           
+
+Question 18
+
+"ILL_DESCRIPTION"             "ILLD"                        
+"Hepatitis A"                 "6"                           
+
+Question 19
+
+"STORE_ID"                    "TRANS_TOTAL_AMT"             
+"1401"                        "47.98"                       
+"1400"                        "14.98"                       
+"1404"                        "8.75"                        
+"1408"                        "24.95"                       
+"1402"                        "21.69"                       
+"1401"                        "27.94"                       
+"1408"                        "31.94"                       
+"1409"                        "47.94"                       
+"1401"                        "22.75"                       
+"1409"                        "14"                          
+"1404"                        "19.74"                       
+"1409"                        "32.65"                       
+"1406"                        "11.99"                       
+"1406"                        "18"                          
+"1408"                        "19.95"                       
+"1406"                        "76.97"                       
+"1408"                        "62"                          
+"1409"                        "56.69"                       
+"1410"                        "23.98"                       
+"1401"                        "42.95"                       
+"1408"                        "12"                          
+"1408"                        "72.99"                       
+
+Question 20
+
+"SPON_COMPANY_NAME"           
+"3M"                          
+"Anderson Windows"            
+"Animal Ark"                  
+"Cambia"                      
+"Cargill"                     
+"Coca-Cola"                   
+"Crossroads"                  
+"Imation"                     
+"Land O''Lakes"               
+"Minnesota State University"  
+"Mission Foods"               
+"Ocean Life"                  
+"Petco"                       
+"Thomson Reuters"             
+"Wal-Mart"                    
+"Xcel Energy"                 
+
+Question 21
+
+"FOOD_SUP_COMPANY_NAME"       
+"Tiger Nutrition"             
+"Animal Food Solutions"       
+
+Question 22
+
+"DEPT_ID"                     "DEPT_NAME"                   "OFFICE_ID"                   "OFFICE_BUILDING"             "EMP_FIRST_NAME"              "EMP_LAST_NAME"               
+"115"                         "Research"                    "327"                         "Research Center"             "Mark"                        "Blue"                        
+
+Question 23
+
+"EMP_FIRST_NAME"              "EMP_LAST_NAME"               "OFFICE_BUILDING"             "DEPT_NAME"                   
+"John"                        "Crosby"                      "Aquatic Research"            "Aquatics"                    
+"Kyle"                        "Taube"                       "Research Center"             "Development"                 
+"Sarah"                       "Tollefson"                   "Administration"              "Children's Zoo"              
+"Jason"                       "Mann"                        "Inner Zoo Research Facility" "Mammals/Carnivores"          
+"Janet"                       "Heatley"                     "Inner Zoo Research Facility" "Research"                    
+"Greggory"                    "Paul"                        "Main Office"                 "Invertebrates"               
+"Kyle"                        "Frank"                       "Inner Zoo Research Facility" "Research"                    
+"Patrick"                     "Havlat"                      "Aquatic Research"            "Research"                    
+"Amanda"                      "Grohl"                       "Administration"              "Laboratory"                  
+"Char"                        "Schroeder"                   "Administration"              "Design"                      
+"Andrew"                      "Brunette"                    "Research Center"             "Invertebrates"               
+"Kim"                         "Marsh"                       "Main Office"                 "Maintenance/Grounds"         
+"Shelby"                      "White"                       "Research Center"             "Research"                    
+"Cole"                        "Young"                       "Aquatic Research"            "Research"                    
+"Mark"                        "Blue"                        "Research Center"             "Research"                    
+"Maria"                       "Lamb"                        "Main Office"                 "Public Relations"            
+
+
+Question 24
+
+"PRODUCT_NAME"                "PRODUCT_TYPE"                "PRODUCT_PURCHASE_PRICE"      "PRODUCT_FINISH_DATE"         
+"Zoo Coffee Mug"              "MP, PP"                      "3.75"                        "28-JUN-09"                   
+"Panda T-shirt"               "MP, PP"                      "4.25"                        "21-APR-07"                   
+"Lion T-shirt"                "MP, PP"                      "4.25"                        "19-APR-07"                   
+"Zoo T-shirt"                 "MP, PP"                      "4.25"                        "20-APR-07"                   
+"Zoo Postcard"                "MP, PP"                      "0.1"                         "17-MAY-08"                   
+
+Question 25
+
+"ANIM_NAME"                   "FOOD_ITEM_DESCRIPTION"       
+"Caroline"                    "Wholesome Acorns with Antioxidants"
+"Seth"                        "Nutritious Walnuts"          
+"Kaylee"                      "Super Meat with Antioxidants"
+"Caroline"                    "Organic Sardines"            
+"Alexander"                   "Tasty Walnuts"               
+"Robert"                      "Wholesome Meat with Antioxidants"
+"Seth"                        "Wholesome Acorns"            
+"Robert"                      "Nutritious Walnuts with Vitamins"
+"Alexander"                   "Nutritious Vegetables"       
+"Kaylee"                      "Super Mixed Seafood with Antioxidants"
+
+
+Question 26
+
+"ANIM_NAME"                   "ANIM_BREED_NAME"             "ANIM_DIETARY_REQUIREMENTS"   "ANIM_CHECKUP_DATE"           
+"Colin"                       "Lion"                        "8"                           "15-FEB-04"                   
+"Colin"                       "Lion"                        "8"                           "18-FEB-04"                   
+"Colin"                       "Lion"                        "10"                          "15-FEB-04"                   
+"Colin"                       "Lion"                        "10"                          "18-FEB-04"                   
+"Stephanie"                   "Lion"                        "6"                           "11-JUN-04"                   
+"Stephanie"                   "Lion"                        "5"                           "11-JUN-04"                   
+"Matthew"                     "Caribou"                     "6"                           "15-JUL-04"                   
+"Matthew"                     "Caribou"                     "4"                           "15-JUL-04"                   
+"Lucas"                       "Caribou"                     "1"                           "10-MAR-04"                   
+"Lucas"                       "Caribou"                     "8"                           "10-MAR-04"                   
+"Nathaniel"                   "Caribou"                     "5"                           "10-MAY-04"                   
+"Nathaniel"                   "Caribou"                     "5"                           "29-MAY-04"                   
+"Nathaniel"                   "Caribou"                     "7"                           "10-MAY-04"                   
+"Nathaniel"                   "Caribou"                     "7"                           "29-MAY-04"                   
+"Devin"                       "Caribou"                     "4"                           "21-JUL-04"                   
+"Devin"                       "Caribou"                     "4"                           "28-JUL-04"                   
+"Devin"                       "Caribou"                     "3"                           "21-JUL-04"                   
+"Devin"                       "Caribou"                     "3"                           "28-JUL-04"                   
+"Jackson"                     "Caribou"                     "2"                           "22-MAY-04"                   
+"Jackson"                     "Caribou"                     "2"                           "01-JUN-04"                   
+"Jackson"                     "Caribou"                     "2"                           "16-JUN-04"                   
+"Jackson"                     "Caribou"                     "9"                           "22-MAY-04"                   
+"Jackson"                     "Caribou"                     "9"                           "01-JUN-04"                   
+"Jackson"                     "Caribou"                     "9"                           "16-JUN-04"                   
+
+Question 27
+
+"ILL_TYPE_ID"                 "ILL_DESCRIPTION"             "ANIM_NAME"                   "ANIM_BREED_NAME"             "ANIM_LIVING_ENVIRONMENT_TYPE"
+"132"                         "Metagonimiasis"              "Jack"                        "Giant Anteater"              "Forest"                      
+"93"                          "Hepatitis A"                 "Jack"                        "Giant Anteater"              "Forest"                      
+"42"                          "Chromoblastomycosis"         "Jackson"                     "Caribou"                     "Desert"                      
+"59"                          "Diphyllobothriasis"          "Jackson"                     "Caribou"                     "Desert"                      
+"85"                          "Group A streptococcal infection""Jackson"                     "Caribou"                     "Desert"                      
+"86"                          "Group B streptococcal infection""Jackson"                     "Caribou"                     "Desert"                      
+"182"                         "Staphylococcal food poisoning""Jackson"                     "Caribou"                     "Desert"                      
+"103"                         "Human granulocytic anaplasmosis(HGA)""James"                       "Sea Otter"                   "Desert"                      
+"96"                          "Hepatitis D"                 "James"                       "Sea Otter"                   "Desert"                      
+"88"                          "Hand, foot and mouth disease(HFMD)""James"                       "Sea Otter"                   "Desert"                      
+"18"                          "Bacteroidesinfection"        "James"                       "Sea Otter"                   "Desert"                      
+"8"                           "Anthrax"                     "James"                       "Sea Otter"                   "Desert"                      
+"128"                         "Measles"                     "James"                       "Sea Otter"                   "Desert"                      
+"93"                          "Hepatitis A"                 "Jasmine"                     "Hamadryas Baboon"            "River"                       
+"173"                         "Salmonellosis"               "Jasmine"                     "Hamadryas Baboon"            "River"                       
+"163"                         "Rat-bite fever"              "Jasmine"                     "Hamadryas Baboon"            "River"                       
+"47"                          "Common cold(Acute viral rhinopharyngitis; Acute coryza)""Jason"                       "Sea Otter"                   "Desert"                      
+"129"                         "Melioidosis(Whitmore''s disease)""Jennifer"                    "Peregrine Falcon"            "Prairie"                     
+"13"                          "Astrovirusinfection"         "Jennifer"                    "Peregrine Falcon"            "Prairie"                     
+"175"                         "Scabies"                     "Jeremiah"                    "American Flamingo"           "Forest"                      
+"213"                         "Yellow fever"                "Jeremiah"                    "American Flamingo"           "Forest"                      
+"82"                          "Gnathostomiasis"             "Jeremiah"                    "American Flamingo"           "Forest"                      
+"101"                         "Human bocavirusinfection"    "Jeremiah"                    "American Flamingo"           "Forest"                      
+"93"                          "Hepatitis A"                 "Jeremiah"                    "American Flamingo"           "Forest"                      
+"193"                         "Tinea nigra"                 "Jesse"                       "Nine-banded Armadillo"       "Arctic"                      
+"78"                          "Geotrichosis"                "Jessica"                     "Bald Eagle"                  "Forest"                      
+"140"                         "Neonatal conjunctivitis(Ophthalmia neonatorum)""Jessica"                     "Bald Eagle"                  "Forest"                      
+"169"                         "Rift Valley fever(RVF)"      "Jocelyn"                     "American Badger"             "Grasslands"                  
+"29"                          "Brucellosis"                 "Jocelyn"                     "American Badger"             "Grasslands"                  
+"4"                           "African sleeping sickness(African trypanosomiasis)""John"                        "Bornean Orangutan"           "Prairie"                     
+"207"                         "Venezuelan hemorrhagic fever""Jonathan"                    "Bengal Tiger"                "Arctic"                      
+"199"                         "Toxoplasmosis"               "Jonathan"                    "Bengal Tiger"                "Arctic"                      
+"78"                          "Geotrichosis"                "Jonathan"                    "Bengal Tiger"                "Arctic"                      
+"43"                          "Clonorchiasis"               "Jonathan"                    "Bengal Tiger"                "Arctic"                      
+"13"                          "Astrovirusinfection"         "Jordan"                      "Dwarf Crocodile"             "Prairie"                     
+"42"                          "Chromoblastomycosis"         "Jordan"                      "Dwarf Crocodile"             "Prairie"                     
+"183"                         "Staphylococcal infection"    "Joseph"                      "Bee Hummingbird"             "Forest"                      
+"17"                          "Bacterial vaginosis(BV)"     "Joseph"                      "Bee Hummingbird"             "Forest"                      
+"74"                          "Food poisoningbyClostridium perfringens""Joshua"                      "American Flamingo"           "River"                       
+"15"                          "Bacillus cereusinfection"    "Juan"                        "Nine-banded Armadillo"       "River"                       
+"165"                         "Rhinosporidiosis"            "Julia"                       "Ostrich"                     "River"                       
+"91"                          "Hemolytic-uremic syndrome(HUS)""Julian"                      "Sea Otter"                   "Tropical"                    
+"153"                         "Pneumococcal infection"      "Julian"                      "Sea Otter"                   "Tropical"                    
+"36"                          "Chagas Disease(American trypanosomiasis)""Justin"                      "Straw-colored Fruit Bat"     "Tropical"                    
+"98"                          "Herpes simplex"              "Justin"                      "Straw-colored Fruit Bat"     "Tropical"                    
+
+Question 28
+
+"PAY_TYPE"                    
+"Credit Card"                 
+
+Question 29
+
+"STORE_ID"                    "STORE_ADDRESS"               
+"1401"                        "13015 Zoo Boulevard"         
+"1402"                        "1240 Estabrook Drive"        
+"1404"                        "1235 Estabrook Drive"        
+"1408"                        "127 East Broadway"           
+"1410"                        "1233 Estabrook Drive"        
+
+Question 30
+
+"PRODUCT_NAME"                
+"Kid Picture Book"            
+"Collage Picture Coffee Table Book"
+"Zebra Handbag"               
+"Zoo Monopoly"                
+"Pandamonium Game"            
+"Elephant Collectible Statue" 
+"Giraffe Frame"               
+"Elephant Hand Puppet"        
+"Koala Puppet"                
+"2GB Elephant Flash Drive"    
+"Panda Earrings"              
+
+
+

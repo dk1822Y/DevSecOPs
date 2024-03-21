@@ -1,0 +1,122 @@
+{
+  "Server": {
+    "hub": {
+      "path": "D:\\Server\\hub\\hub.exe",
+      "args": "--config_file=D:\\Server\\hub\\config_hub.txt",
+      "wait": 0
+    },
+    "hub_gw": {
+      "path": "D:\\Server\\hub_gw\\hub_gw.exe",
+      "args": "--config_file=D:\\Server\\hub_gw\\config_hub_gw.txt",
+      "wait": 0
+    },
+    "arg_gw": {
+      "path": "D:\\Server\\arb_gw\\arb_gw_tw2_log.exe",
+      "args": "--config_file=D:\\Server\\arb_gw\\config_arb_gw.txt",
+      "wait": 0
+    },
+    "bin": {
+      "path": "D:\\Server\\Executable\\Bin"
+    },
+    "nexusserver": {
+      "path": "D:\\Server\\Executable\\Bin\\Nexusserver.exe",
+      "args": "",
+      "wait": 0
+    },
+    "matchserver": {
+      "path": "D:\\Server\\Executable\\Bin\\MatchServer.exe",
+      "args": "",
+      "wait": 0
+    },
+    "xigncodeproxy": {
+      "path": "D:\\Server\\Executable\\Bin\\XigncodeProxy.exe",
+      "args": "",
+      "wait": 0
+    },
+    "arbiterserver": {
+      "path": "D:\\Server\\Executable\\Bin\\ArbiterServer.exe",
+      "args": "",
+      "wait": 0
+    },
+    "topographyserver": {
+      "path": "D:\\Server\\Executable\\Bin\\TopographyServer.exe",
+      "args": "--sharedmemoryproducer=true",
+      "wait": 180
+    },
+    "worldserver": {
+      "path": "D:\\Server\\Executable\\Bin\\WorldServer.exe",
+      "args": "",
+      "wait": 120
+    },
+    "battlefield": {
+      "path": "D:\\Server\\Executable\\Bin\\WorldServer.exe",
+      "args": "--id=10",
+      "wait": 120
+    },
+    "partymatching": {
+      "path": "D:\\Server\\Executable\\Bin\\WorldServer.exe",
+      "args": "--id=11",
+      "wait": 120
+    },
+    "dungeonother": {
+      "path": "D:\\Server\\Executable\\Bin\\WorldServer.exe",
+      "args": "--id=12",
+      "wait": 120
+    },
+    "dungeonserver": {
+      "path": "D:\\Server\\Executable\\Bin\\WorldServer.exe",
+      "args": "--id=13",
+      "wait": 120
+    },
+    "boxapi": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\boxBoxAPI.py --config_file=D:\\Server Components\\boxBoxConfig.ini",
+      "wait": 2
+    },
+    "steerhub": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\steerserver\\SteerHub.py --config_file D:\\Server Components\\steerserver\\SteerConfig.ini",
+      "wait": 2
+    },
+    "steersession": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\steerserver\\SteerSession.py --config_file D:\\Server Components\\steerserver\\SteerConfig.ini",
+      "wait": 2
+    },
+    "steermind": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\steerserver\\SteerMind.py --config_file D:\\Server Components\\steerserver\\SteerConfig.ini",
+      "wait": 2
+    },
+    "steercast": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\steerserver\\SteerCast.py --config_file D:\\Server Components\\steerserver\\SteerConfig.ini",
+      "wait": 2
+    },
+    "steergateway": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\steerserver\\SteerGateway.py --config_file D:\\Server Components\\steerserver\\SteerConfig.ini",
+      "wait": 2
+    },
+    "boxweb": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\boxadminweb\\BoxWebRun.py",
+      "wait": 2
+    },
+    "steerweb": {
+      "path": "C:\\Python26\\python.exe",
+      "args": "D:\\Server Components\\steerweb\\SteerWebRun.py",
+      "wait": 2
+    },
+    "fcgi_gw": {
+      "path": "D:\\Server Components\\fcgi_gw\\fcgi_gw.exe",
+      "args": "--config_file=D:\\Server Components\\fcgi_gw\\config_fcgi_gw.txt",
+      "wait": 2
+    },
+    "fcgi_webapi": {
+      "path": "D:\\Server Components\\fcgi_webapi\\nginx.exe",
+      "args": "",
+      "wait": 0
+    }
+  }
+}

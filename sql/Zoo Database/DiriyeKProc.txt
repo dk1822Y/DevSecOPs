@@ -1,0 +1,39 @@
+CREATE OR REPLACE PROCEDURE PRC_ORDER_ADD 
+(CUS_NUM IN VARCHAR2,D_DATE IN DATE ) 
+AS BEGIN
+INSERT INTO ORDERS (CUSTOMER_NUM,ORDER_DATE,ORDER_NUM)
+VALUES (CUS_NUM,D_DATE,ORDERS_SEQ.NEXTVAL);
+  
+  DBMS_OUTPUT.PUT_LINE('ORDER_NUMBER ON:' || D_DATE || 'FROM ' || CUS_NUM || 'ADDED');
+END PRC_ORDER_ADD;
+
+"ORDER_NUM"                   "ORDER_DATE"                  "CUSTOMER_NUM"                
+"5000 "                       "25-APR-16"                   "148"                         
+"21608"                       "20-OCT-03"                   "148"                         
+"21610"                       "20-OCT-03"                   "356"                         
+"21613"                       "21-OCT-03"                   "408"                         
+"21614"                       "21-OCT-03"                   "282"                         
+"21617"                       "23-OCT-03"                   "608"                         
+"21619"                       "23-OCT-03"                   "148"                         
+"21623"                       "23-OCT-03"                   "608"                         
+
+CREATE OR REPLACE PROCEDURE PRC_LINE_ADD 
+(PART_NUM IN VARCHAR2,NUM_ORD IN VARCHAR2  ) 
+AS BEGIN
+INSERT INTO ORDER_LINE (ORDER_NUM,PART_NUM,NUM_ORDERED,QUOTED_PRICE)
+VALUES (ORDERS_SEQ.CURRVAL,PART_NUM,NUM_ORD,(SELECT PRICE FROM PART WHERE PART_NUM = PART_NUM));
+  
+DBMS_OUTPUT.PUT_LINE ('LINE' || PART_NUM || 'ADDED');
+END PRC_LINE_ADD;
+
+"ORDER_NUM"                   "PART_NUM"                    "NUM_ORDERED"                 "QUOTED_PRICE"                
+"5000 "                       "AT94"                        "3"                           "24.95"                       
+"21608"                       "AT94"                        "11"                          "21.95"                       
+"21610"                       "DR93"                        "1"                           "495"                         
+"21610"                       "DW11"                        "1"                           "399.99"                      
+"21613"                       "KL62"                        "4"                           "329.95"                      
+"21614"                       "KT03"                        "2"                           "595"                         
+"21617"                       "BV06"                        "2"                           "794.95"                      
+"21617"                       "CD52"                        "4"                           "150"                         
+"21619"                       "DR93"                        "1"                           "495"                         
+"21623"                       "KV29"                        "2"                           "1290"                        

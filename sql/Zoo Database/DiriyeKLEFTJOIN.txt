@@ -1,0 +1,44 @@
+List all the products names and their finished dates (if they have one).
+
+SELECT PRODUCT.PRODUCT_NAME, MANUFACTURED_PRODUCT.PRODUCT_FINISH_DATE
+FROM PRODUCT 
+LEFT JOIN MANUFACTURED_PRODUCT ON PRODUCT.PRODUCT_ID = MANUFACTURED_PRODUCT.PRODUCT_ID;
+
+35
+
+"PRODUCT_NAME"                "PRODUCT_FINISH_DATE"         
+"Plush Giraffe"               ""                            
+"Zoo Coffee Mug"              "28-JUN-09"                   
+"Zoo Water bottle"            "25-APR-07"                   
+"Collage key chain"           ""                            
+"Animals in the Wild DVD"     "03-FEB-09"                   
+"Zoo Magnet"                  ""                            
+"Kid Picture Book"            ""                            
+"Collage Picture Coffee Table Book"""                            
+"Who''s in the Jungle Book"   ""                            
+"Sounds of the Jungle CD"     "04-MAR-09"                   
+"Panda T-shirt"               "21-APR-07"                   
+"Lion T-shirt"                "19-APR-07"                   
+"Zoo T-shirt"                 "20-APR-07"                   
+"Leopard Scarf"               "13-SEP-07"                   
+"Zebra Handbag"               ""                            
+"Plush Polar Bear"            ""                            
+"Plush Lion"                  ""                            
+"Sounds of the Ocean CD"      "15-SEP-08"                   
+"Zoo Monopoly"                ""                            
+"Pandamonium Game"            ""                            
+"Elephant Collectible Statue" ""                            
+"Zoo Coloring Book"           ""                            
+"Zoo Pen Pack"                ""                            
+"Zoo Green Bag"               ""                            
+"Zoo Postcard"                "17-MAY-08"                   
+"Panda Babies 2010 Calendar"  "20-NOV-07"                   
+"Bird Watcher''s Field Kit"   "01-MAR-09"                   
+"Giraffe Frame"               ""                            
+"Magnetic Zoo Frame"          ""                            
+"Elephant Hand Puppet"        ""                            
+"Koala Puppet"                ""                            
+"Animal Montage Puzzle"       ""                            
+"2GB Elephant Flash Drive"    ""                            
+"Lion Mouse Pad"              ""                            
+"Panda Earrings"              ""            

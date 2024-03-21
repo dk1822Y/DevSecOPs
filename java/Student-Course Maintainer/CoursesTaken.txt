@@ -1,0 +1,3 @@
+IT # 210 # Introduction to Programming # 4 # 2 # B
+IT # 214 # Introduction to Software Development # 4 # 1 # A
+IT # 310 # Data Structures # 4 # 1 # B

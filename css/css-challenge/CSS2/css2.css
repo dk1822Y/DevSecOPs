@@ -1,0 +1,14 @@
+body {
+    background-color: #55ccff;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+li::first-letter{
+    font-size: 200%;
+}

@@ -1,0 +1,20 @@
+List all team names. Only display the teams names that are not Red.
+
+SELECT TEAM_NAME
+FROM TEAM 
+WHERE TEAM_NAME != 'Red';
+
+11
+
+"TEAM_NAME"                   
+"Gold"                        
+"Blue"                        
+"Silver"                      
+"Brown"                       
+"Fuschia"                     
+"Yellow"                      
+"Purple"                      
+"Green"                       
+"Black"                       
+"Pink"                        
+"Orange"                      

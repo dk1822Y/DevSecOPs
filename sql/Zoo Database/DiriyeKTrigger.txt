@@ -1,0 +1,34 @@
+"PART_NUM"                    "DESCRIPTION"                 "ON_HAND"                     "CLASS"                       "WAREHOUSE"                   "PRICE"                       "MINIMUM"                     "REORDER"                     
+"AT94"                        "Iron           "             "19"                          "HW"                          "3"                           "24.95"                       "20"                          "Y"                           
+"BV06"                        "Home Gym       "             "45"                          "SG"                          "2"                           "794.95"                      "30"                          "N"                           
+"CD52"                        "Microwave Oven "             "32"                          "AP"                          "1"                           "165"                         "49"                          "Y"                           
+"DL71"                        "Cordless Drill "             "21"                          "HW"                          "3"                           "129.95"                      "20"                          "N"                           
+"DR93"                        "Gas Range      "             "8"                           "AP"                          "2"                           "495"                         "4"                           "N"                           
+"DW11"                        "Washer         "             "12"                          "AP"                          "3"                           "399.99"                      "8"                           "N"                           
+"FD21"                        "Stand Mixer    "             "22"                          "HW"                          "3"                           "159.95"                      "2"                           "N"                           
+"KL62"                        "Dryer          "             "12"                          "AP"                          "1"                           "349.95"                      "7"                           "N"                           
+"KT03"                        "Dishwasher     "             "8"                           "AP"                          "3"                           "595"                         "3"                           "N"                           
+"KV29"                        "Treadmill      "             "9"                           "SG"                          "2"                           "1390"                        "9"                           "N"  
+
+CREATE OR REPLACE TRIGGER TRG_REORDER
+AFTER UPDATE OF ON_HAND, MINIMUM ON PART 
+BEGIN
+  UPDATE PART
+  SET REORDER = 'Y'
+  WHERE ON_HAND < MINIMUM;
+  
+  UPDATE PART
+  SET REORDER = 'N'
+  WHERE ON_HAND >= MINIMUM;
+END;
+
+CREATE OR REPLACE TRIGGER TRG_REORDER_2
+BEFORE INSERT OR UPDATE OF ON_HAND, MINIMUM ON PART
+FOR EACH ROW
+BEGIN
+  IF :NEW.ON_HAND <= :NEW.MINIMUM THEN
+    :NEW.REORDER := 'Y';
+  ELSE
+    :NEW.REORDER := 'N';
+  END IF;
+END;                         

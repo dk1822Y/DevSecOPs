@@ -1,0 +1,32 @@
+Router>enable
+	
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname RanetA
+RanetA(config)#enable secret ranetenablepass
+RanetA(config)#line con 0
+RanetA(config-line)#password ranetconsolepass
+RanetA(config-line)#login
+RanetA(config-line)#exit
+RanetA(config)#line vty 0 4
+RanetA(config-line)#password ranettelnetpass
+RanetA(config-line)#login
+RanetA(config-line)#exit
+RanetA(config)#interface fastethernet 0/0
+RanetA(config-if)#ip address 10.0.0.1 255.255.255.252
+RanetA(config-if)#no shutdown
+
+RanetA(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+RanetA(config-if)#exit
+RanetA(config)#int fa0/1
+RanetA(config-if)#ip address 192.168.0.254 255.255.255.192
+RanetA(config-if)#no shutdown
+
+RanetA(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up

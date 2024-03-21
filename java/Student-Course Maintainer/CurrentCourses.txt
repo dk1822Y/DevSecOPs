@@ -1,0 +1,3 @@
+IT # 414 # Advanced Object-Oriented Programming with Design Patterns # 4 # 2 # C
+IT # 483 # Web Applications and User Interface Design # 4 # 1 # A
+IT # 340 # Introduction to Database Systems# 4 # 1 # B

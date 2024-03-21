@@ -1,0 +1,11 @@
+List the name, address, and city of each zoo.
+
+SELECT ZOO_NAME, ZOO_ADDRESS, ZOO_CITY
+FROM ZOO;
+
+3 
+
+"ZOO_NAME"                    "ZOO_ADDRESS"                 "ZOO_CITY"                    
+"The Como Park Zoo and Conservatory""1225 Estabrook Drive"        "St.Paul"                     
+"Underwater Adventure"        "120 East Broadway"           "Bloomington"                 
+"Minnesota Zoo"               "13000 Zoo Boulevard"         "Apple Valley"     

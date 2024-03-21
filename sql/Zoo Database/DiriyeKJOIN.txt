@@ -1,0 +1,37 @@
+List the inventory amount, product name, and warehouse state. Display only the products that start with S or A having a warehouse city name that's not Edison.
+
+SELECT INVEN_AMOUNT, PRODUCT_NAME, WAREHOUSE_STATE
+FROM INVENTORY JOIN PRODUCT ON INVENTORY.PRODUCT_ID = PRODUCT.PRODUCT_ID
+JOIN WAREHOUSE ON INVENTORY.WAREHOUSE_ID = WAREHOUSE.WAREHOUSE_ID
+WHERE PRODUCT.PRODUCT_NAME LIKE 'S%' 
+OR PRODUCT.PRODUCT_NAME LIKE 'A%'
+AND WAREHOUSE.WAREHOUSE_CITY != 'Edison';
+
+22
+
+"INVEN_AMOUNT"                "PRODUCT_NAME"                "WAREHOUSE_STATE"             
+"27"                          "Animals in the Wild DVD"     "OH"                          
+"31"                          "Animals in the Wild DVD"     "MN"                          
+"30"                          "Animals in the Wild DVD"     "IA"                          
+"35"                          "Animals in the Wild DVD"     "MI"                          
+"32"                          "Animals in the Wild DVD"     "CA"                          
+"36"                          "Sounds of the Jungle CD"     "OH"                          
+"32"                          "Sounds of the Jungle CD"     "MN"                          
+"46"                          "Sounds of the Jungle CD"     "NJ"                          
+"27"                          "Sounds of the Jungle CD"     "IA"                          
+"39"                          "Sounds of the Jungle CD"     "MI"                          
+"36"                          "Sounds of the Jungle CD"     "CA"                          
+"35"                          "Sounds of the Ocean CD"      "OH"                          
+"29"                          "Sounds of the Ocean CD"      "MN"                          
+"31"                          "Sounds of the Ocean CD"      "NJ"                          
+"10"                          "Sounds of the Ocean CD"      "IA"                          
+"15"                          "Sounds of the Ocean CD"      "MI"                          
+"12"                          "Sounds of the Ocean CD"      "CA"                          
+"65"                          "Animal Montage Puzzle"       "OH"                          
+"79"                          "Animal Montage Puzzle"       "MN"                          
+"70"                          "Animal Montage Puzzle"       "IA"                          
+"59"                          "Animal Montage Puzzle"       "MI"                          
+"32"                          "Animal Montage Puzzle"       "CA"                          
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Find the name of the products that have a purchased price greater than the average purchase price of all of the products. Use a subquery.
+

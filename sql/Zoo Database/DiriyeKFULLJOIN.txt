@@ -1,0 +1,43 @@
+List all the prescription dosages, the date the prescription was taken, and the animal departure dates in May
+
+SELECT PRESCRIPTION.PRES_DOSAGE, PRESCRIPTION.PRES_DATE_TAKEN, ANIMAL.ANIM_DEPARTURE_DATE
+FROM PRESCRIPTION 
+FULL JOIN ANIMAL ON PRESCRIPTION.ANIM_ID = ANIMAL.ANIM_ID
+WHERE PRESCRIPTION.PRES_DATE_TAKEN LIKE '%MAY%';
+
+33
+
+"PRES_DOSAGE"                 "PRES_DATE_TAKEN"             "ANIM_DEPARTURE_DATE"         
+"84 mg"                       "09-MAY-02"                   ""                            
+"29 ml"                       "16-MAY-04"                   ""                            
+"70 mg"                       "16-MAY-04"                   ""                            
+"86 mg"                       "16-MAY-04"                   ""                            
+"9 ml"                        "16-MAY-04"                   ""                            
+"76 ml"                       "06-MAY-98"                   ""                            
+"35 ml"                       "06-MAY-98"                   ""                            
+"86 mg"                       "24-MAY-08"                   ""                            
+"98 tsp"                      "24-MAY-08"                   ""                            
+"98 mg"                       "24-MAY-08"                   ""                            
+"81 mg"                       "24-MAY-08"                   ""                            
+"74 mg"                       "22-MAY-07"                   ""                            
+"58 tsp"                      "22-MAY-07"                   ""                            
+"35 ml"                       "22-MAY-07"                   ""                            
+"33 tsp"                      "22-MAY-07"                   ""                            
+"70 mg"                       "27-MAY-07"                   ""                            
+"33 tbsp"                     "27-MAY-07"                   ""                            
+"64 mg"                       "27-MAY-07"                   ""                            
+"52 mg"                       "27-MAY-07"                   ""                            
+"61 ml"                       "15-MAY-07"                   ""                            
+"65 mg"                       "14-MAY-98"                   ""                            
+"28 mg"                       "14-MAY-98"                   ""                            
+"96 mg"                       "14-MAY-98"                   ""                            
+"5 tsp"                       "14-MAY-98"                   ""                            
+"8 tsp"                       "14-MAY-98"                   ""                            
+"14 tbsp"                     "22-MAY-09"                   ""                            
+"78 mg"                       "06-MAY-98"                   ""                            
+"8 tsp"                       "06-MAY-98"                   ""                            
+"2 mg"                        "06-MAY-98"                   ""                            
+"48 mg"                       "06-MAY-98"                   ""                            
+"66 tsp"                      "08-MAY-01"                   ""                            
+"49 tsp"                      "08-MAY-01"                   ""                            
+"82 mg"                       "24-MAY-08"                   "13-MAY-09"  

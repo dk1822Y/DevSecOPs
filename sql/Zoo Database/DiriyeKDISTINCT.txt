@@ -1,0 +1,10 @@
+List all types of payments. Only list them once.
+
+SELECT DISTINCT PAY_TYPE
+FROM PAYMENT;
+
+2 
+
+"PAY_TYPE"                    
+"Check"                       
+"Credit Card"

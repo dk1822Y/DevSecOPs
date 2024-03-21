@@ -1,0 +1,20 @@
+body {
+    background-color: #364371;
+}
+
+#wrap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav {
+    width: 20%;
+    background-color: #b0cfff;
+    float: left;
+}
+
+#content{
+    background-color: #5b7fbd;
+    float: right;
+    width: 80%;
+}

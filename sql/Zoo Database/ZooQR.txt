@@ -1,0 +1,258 @@
+--List the name, address, and city of each zoo. (SELECT)
+
+SELECT ZOO_NAME, ZOO_ADDRESS, ZOO_CITY
+FROM ZOO;
+
+--3 
+
+"ZOO_NAME"                    "ZOO_ADDRESS"                 "ZOO_CITY"                    
+"The Como Park Zoo and Conservatory""1225 Estabrook Drive"        "St.Paul"                     
+"Underwater Adventure"        "120 East Broadway"           "Bloomington"                 
+"Minnesota Zoo"               "13000 Zoo Boulevard"         "Apple Valley"                
+                    
+--List all team names. Only display the teams names that are not Red. (WHERE)
+
+SELECT TEAM_NAME
+FROM TEAM 
+WHERE TEAM_NAME != 'Red';
+
+--11
+
+"TEAM_NAME"                   
+"Gold"                        
+"Blue"                        
+"Silver"                      
+"Brown"                       
+"Fuschia"                     
+"Yellow"                      
+"Purple"                      
+"Green"                       
+"Black"                       
+"Pink"                        
+"Orange"                      
+
+--List all types of payments. Only list them once. (DISTINCT)
+
+SELECT DISTINCT PAY_TYPE
+FROM PAYMENT;
+
+--2 
+
+"PAY_TYPE"                    
+"Check"                       
+"Credit Card"
+
+--List the number of maint titles that are HVAC. Use count function.(FUNCTION)
+
+SELECT COUNT(*)
+FROM MAINTENANCE
+WHERE MAINT_TITLE = 'HVAC';
+
+--1 
+
+"COUNT(*)"                    
+"5"                           
+
+
+--List the department name for all employees that have worked in the following departments: Veterinary, Registrar, and Invertebrates. Use the IN operator. (IN)
+
+SELECT EMP_ID, EMP_FIRST_NAME, EMP_LAST_NAME
+FROM EMPLOYEE E
+JOIN DEPARTMENT D
+ON E.DEPT_ID = D.DEPT_ID
+WHERE D.DEPT_NAME IN ('Veterinary', 'Registrar', 'Invertebrates');
+
+"EMP_ID"                      "EMP_FIRST_NAME"              "EMP_LAST_NAME"               
+"4031"                        "Joe"                         "Kelleher"                    
+"4143"                        "Daniel"                      "Johnson"                     
+"4171"                        "Greggory"                    "Paul"                        
+"4206"                        "Bret"                        "Blakemore"                   
+"4360"                        "Andrew"                      "Brunette"                    
+"4409"                        "Michelle"                    "Lewis"                       
+"4451"                        "Saundra"                     "Martinez"                    
+
+--List all zoo names and their phone numbers. In reverse alphabetical order by zoo name. (ORDER BY)
+
+SELECT ZOO_NAME, ZOO_PHONE_NUMBER
+FROM ZOO
+ORDER BY ZOO_NAME DESC;
+
+--3 
+
+"ZOO_NAME"                    "ZOO_PHONE_NUMBER"            
+"Underwater Adventure"        "9528830202"                  
+"The Como Park Zoo and Conservatory""6514878200"                  
+"Minnesota Zoo"               "9524319500"     
+
+--List all the team names that have a association ID of 833. (Use subquery)
+
+SELECT TEAM_NAME
+FROM TEAM
+WHERE ASSOC_ID = (SELECT ASSOC_ID FROM ASSOCIATION WHERE ASSOC_ID = 833);
+
+--1
+
+"TEAM_NAME"                   
+"Brown"                       
+
+--List the product ID and the max product suggested price. Group by product ID. (GROUP BY)
+
+SELECT PRODUCT_ID, MAX(PRODUCT_SUGGESTED_PRICE)
+FROM PRODUCT
+GROUP BY PRODUCT_ID;
+
+--35
+
+"PRODUCT_ID"                  "MAX(PRODUCT_SUGGESTED_PRICE)"
+"124"                         "15"                          
+"145"                         "14.95"                       
+"225"                         "8.75"                        
+"231"                         "8.95"                        
+"272"                         "14"                          
+"273"                         "14"                          
+"274"                         "14"                          
+"311"                         "5.95"                        
+"341"                         "5"                           
+"354"                         "18.71"                       
+"385"                         "11.99"                       
+"442"                         "15"                          
+"452"                         "9.99"                        
+"463"                         "10"                          
+"513"                         "25.75"                       
+"516"                         "16.99"                       
+"563"                         "24.95"                       
+"576"                         "12.99"                       
+"583"                         "11.95"                       
+"603"                         "1.99"                        
+"613"                         "20"                          
+"735"                         "12"                          
+"736"                         "16"                          
+"751"                         "20"                          
+"763"                         "25"                          
+"843"                         "7.99"                        
+"845"                         "29.95"                       
+"846"                         "3.75"                        
+"851"                         "2.75"                        
+"885"                         "18"                          
+"907"                         "0.99"                        
+"942"                         "29.99"                       
+"968"                         "8.99"                        
+"975"                         "5"                           
+"984"                         "14.95"                       
+
+--List all private event types. No duplicates allowed. (HAVING)
+
+SELECT PRIV_EVEN_TYPE
+FROM PRIVATE_EVENT
+GROUP BY PRIV_EVEN_TYPE
+HAVING COUNT(*) > 1;
+
+--7
+
+"PRIV_EVEN_TYPE"              
+"Adult party"                 
+"Wedding"                     
+"Graduation party"            
+"Field trip"                  
+"Wedding reception"           
+"Dinner party"                
+"Birthday"                    
+
+--List the animal name and animal check up weights under 5 pounds. (2 Table Join)
+
+SELECT ANIM_NAME, ANIM_CHECKUP_WEIGHT
+FROM ANIMAL
+JOIN ANIMAL_CHECKUP
+ON ANIMAL.ANIM_ID = ANIMAL_CHECKUP.ANIM_ID
+WHERE ANIMAL_CHECKUP.ANIM_CHECKUP_WEIGHT < 5;
+
+--29
+
+"ANIM_NAME"                   "ANIM_CHECKUP_WEIGHT"         
+"Jayden"                      "0"                           
+"Ryan"                        "-25"                         
+"Ryan"                        "-28"                         
+"Mason"                       "-3"                          
+"Ariana"                      "0"                           
+"Ariana"                      "-4"                          
+"Gabriel"                     "-1"                          
+"Aaron"                       "-27"                         
+"Aaron"                       "-4"                          
+"Audrey"                      "-2"                          
+"Audrey"                      "2"                           
+"Audrey"                      "-8"                          
+"Audrey"                      "-21"                         
+"James"                       "-26"                         
+"James"                       "-25"                         
+"Zachary"                     "0"                           
+"William"                     "3"                           
+"William"                     "-19"                         
+"William"                     "-23"                         
+"William"                     "-12"                         
+"Alexander"                   "-12"                         
+"Alexander"                   "1"                           
+"Gabriella"                   "4"                           
+"Gabriella"                   "-5"                          
+"Nicole"                      "4"                           
+"Brayden"                     "1"                           
+"Carter"                      "-4"                          
+"Evan"                        "-1"                          
+"Nicholas"                    "-16"                         
+
+--List the inventory amount, product name, and warehouse state. Only Sounds of Jungle CDs can be displayed as products and a warehouse city names that aren't in Edison. (2 Table JOIN)
+
+SELECT INVEN_AMOUNT, PRODUCT_NAME, WAREHOUSE_STATE
+FROM INVENTORY 
+JOIN PRODUCT ON INVENTORY.PRODUCT_ID = PRODUCT.PRODUCT_ID
+JOIN WAREHOUSE ON INVENTORY.WAREHOUSE_ID = WAREHOUSE.WAREHOUSE_ID
+WHERE PRODUCT.PRODUCT_NAME = 'Sounds of the Jungle CD'
+AND WAREHOUSE.WAREHOUSE_CITY != 'Edison';
+
+--5
+
+"INVEN_AMOUNT"                "PRODUCT_NAME"                "WAREHOUSE_STATE"             
+"36"                          "Sounds of the Jungle CD"     "OH"                          
+"32"                          "Sounds of the Jungle CD"     "MN"                          
+"27"                          "Sounds of the Jungle CD"     "IA"                          
+"39"                          "Sounds of the Jungle CD"     "MI"                          
+"36"                          "Sounds of the Jungle CD"     "CA"                          
+
+--List employee first name, last name, office building, department name, and zoo name. Display employee salaries is less than 40,000. (3 Table Join)
+
+SELECT EMPLOYEE.EMP_FIRST_NAME, EMPLOYEE.EMP_LAST_NAME, OFFICE.OFFICE_BUILDING, DEPARTMENT.DEPT_NAME, ZOO.ZOO_NAME  
+FROM EMPLOYEE
+JOIN OFFICE ON OFFICE.OFFICE_ID = EMPLOYEE.OFFICE_ID
+JOIN DEPARTMENT ON DEPARTMENT.DEPT_ID = EMPLOYEE.DEPT_ID
+JOIN ZOO ON ZOO.ZOO_ID = EMPLOYEE.ZOO_ID
+WHERE EMPLOYEE.EMP_SALARY < 40000;
+
+--1
+
+"EMP_FIRST_NAME"              "EMP_LAST_NAME"               "OFFICE_BUILDING"             "DEPT_NAME"                   "ZOO_NAME"                    
+"Kim"                         "Marsh"                       "Main Office"                 "Maintenance/Grounds"         "Underwater Adventure" 
+
+--List animal gender, animal breed name, animal checkup height, animal dietary requirements, and animal living environment type for all Mountain Goats. (4 Table Join)
+
+SELECT ANIM_GENDER, ANIM_BREED_NAME, ANIM_CHECKUP_HEIGHT, ANIM_DIETARY_REQUIREMENTS, ANIM_LIVING_ENVIRONMENT_TYPE
+FROM ANIMAL
+JOIN ANIMAL_BREED ON ANIMAL_BREED.ANIM_BREED_ID = ANIMAL.ANIM_BREED_ID
+JOIN ANIMAL_CHECKUP ON ANIMAL_CHECKUP.ANIM_ID = ANIMAL.ANIM_ID
+JOIN ANIMAL_DIETARY_REQUIREMENTS ON ANIMAL_DIETARY_REQUIREMENTS.ANIM_ID = ANIMAL.ANIM_ID
+JOIN ANIMAL_LIVING_ENVIRONMENT ON ANIMAL_LIVING_ENVIRONMENT.ANIM_LIVING_ENVIRONMENT_ID = ANIMAL.ANIM_LIVING_ENVIRONMENT_ID
+WHERE ANIMAL_BREED.ANIM_BREED_NAME = 'Mountain Goat';
+
+--10
+
+"ANIM_GENDER"                 "ANIM_BREED_NAME"             "ANIM_CHECKUP_HEIGHT"         "ANIM_DIETARY_REQUIREMENTS"   "ANIM_LIVING_ENVIRONMENT_TYPE"
+"F          "                 "Mountain Goat"               "23"                          "2"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "23"                          "5"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "25"                          "2"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "25"                          "5"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "26"                          "2"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "26"                          "5"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "25"                          "2"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "25"                          "5"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "26"                          "2"                           "Prairie"                     
+"F          "                 "Mountain Goat"               "26"                          "5"                           "Prairie"
+
+

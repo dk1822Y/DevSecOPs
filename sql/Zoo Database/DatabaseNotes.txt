@@ -1,0 +1,60 @@
+IT 340 - Notes
+(3/30/16)
+	SELECT SUM(PRICE), CLASS
+	FROM PART
+	WHERE PRICE > 2.00
+	GROUP BY CLASS;
+	HAVING SUM(PRICE) < 4.00;
+	
+	SELECT PART_NUM, DESCRIPTION, ON_HAND * PRICE AS ON_HAND_VALUE
+	FROM PART; 
+	
+	Question 21 (BLANK)
+	
+	
+(4/19)
+Stored Procedure
+	-Reference 
+	-Parameters must be set in order and must be of same data type
+	-Commit;
+	-Rollback;
+	
+	
+-Final Exam
+PREMIER PRODUCT DATA SET
+
+	-50 Multiple choice
+	-6-10 short answer
+	-5/5/16 at 8 am
+	-Moris Hall 103
+	-Clauses, Wildcards, subtract, multi, count, joins
+	-SQL
+		-WHERE
+		-GROUP BY
+		-HAVING
+	-Union Corp
+		-Union
+		-Unionall
+		-intersect
+		-min
+		
+	-Views - Know how they work
+	-Triggers - Know how they work
+	
+	-DML
+		-Insert
+		-Update
+		-Create
+		-Commit
+		-Rollback
+		-Delete
+
+	-Subtype - both attributes from their supertype and the relationship
+	-Supertype - know how they work
+	
+	-Disjoint/Overlapping
+	
+	-1to1
+	-FanTrap - know how it works
+	-Redundant relationship - data access speed
+	-Unary/Ternary - 1 and other 3 

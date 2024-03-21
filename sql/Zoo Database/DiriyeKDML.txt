@@ -1,0 +1,48 @@
+﻿INSERT INTO CUSTOMER (CUSTOMER_NUM, CUSTOMER_NAME, ADDRESS, CITY, STATE, ZIP, BALANCE, CREDIT_LIMIT, REP_NUM)
+VALUES ('111','Ron’s Handball Shoppe','123 Rollout Ave','Court City','UT','85457',21.00,2000.50,'65');
+
+INSERT INTO CUSTOMER (CUSTOMER_NUM, CUSTOMER_NAME, CITY, STATE, CREDIT_LIMIT)
+VALUES ('113','Go Big Red','Lincoln','NE',9000);
+
+INSERT INTO CUSTOMER (CUSTOMER_NUM, ADDRESS, CITY, STATE, ZIP, BALANCE, CREDIT_LIMIT, REP_NUM)
+VALUES ('115','456 Second St.','Good Thunder','MN','56037',36.99,5000,'65');
+
+Data not inserted because Customer name not nullable therefore putting a null value isn't acceptable.
+
+UPDATE CUSTOMER
+SET CREDIT_LIMIT = 99999
+WHERE CUSTOMER_NAME = 'The Everything Shop';
+
+COMMIT;
+
+DELETE FROM CUSTOMER
+WHERE CUSTOMER_NAME = 'Brookings Direct';
+
+ROLLBACK;
+
+SELECT CUSTOMER_NUM, CUSTOMER_NAME, STREET, CREDIT_LIMIT, REP_NUM
+FROM CUSTOMER;
+
+
+"CUSTOMER_NUM"                "CUSTOMER_NAME"               "STREET"                      "CREDIT_LIMIT"                "REP_NUM"                     
+"148"                         "Al's Appliance and Sport           ""2837 
+Greenway "             "7500"                        "20"                          
+"282"                         "Brookings Direct                   ""3827 
+Devon    "             "10000"                       "35"                          
+"356"                         "Ferguson's                         ""382 
+Wildwood  "             "7500"                        "65"                          
+"408"                         "The Everything Shop                ""1828 
+Raven    "             "99999"                       "35"                          
+"462"                         "Bargains Galore                    ""3829 
+Central  "             "10000"                       "65"                          
+"524"                         "Kline's                            ""838 
+Ridgeland "             "15000"                       "20"                          
+"608"                         "Johnson's Department Store         ""372 
+Oxford    "             "10000"                       "65"                          
+"687"                         "Lee's Sport and Appliance          ""282 
+Evergreen "             "5000"                        "35"                          
+"725"                         "Deerfield's Four Seasons           ""282 
+Columbia  "             "7500"                        "35"                          
+"842"                         "All Season                         ""28 Lakeview    "             "7500"                        "20"                          
+"111"                         "Ron’s Handball Shoppe              ""123 Rollout Ave"             "2000.5"                      "65"                          
+"113"                         "Go Big Red                         """                            "9000"                        ""                            

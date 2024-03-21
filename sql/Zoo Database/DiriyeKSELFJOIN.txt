@@ -1,0 +1,15 @@
+List the team names that have the same associates.
+
+SELECT TEAM1.TEAM_ID, TEAM2.ASSOC_ID, TEAM2.TEAM_ID
+FROM TEAM TEAM1, TEAM TEAM2
+WHERE TEAM1.ASSOC_ID = TEAM2.ASSOC_ID
+AND TEAM1.TEAM_ID < TEAM2.TEAM_ID;
+
+5
+
+"TEAM_ID"                     "ASSOC_ID"                    "TEAM_ID_1"                   
+"313"                         "813"                         "367"                         
+"325"                         "859"                         "432"                         
+"336"                         "805"                         "415"                         
+"342"                         "863"                         "387"                         
+"401"                         "887"                         "470"        
