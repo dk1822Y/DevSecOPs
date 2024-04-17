@@ -6,7 +6,7 @@ Lab involves implementing a zero-trust architecture for service-to-service workl
 
 # Activity 1
 
-![alt text](activity-1.png)
+![alt text](activity1.png)
 
 ## Establish Secure Access to an Internal Web Application
 
